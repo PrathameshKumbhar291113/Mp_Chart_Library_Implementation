@@ -10,6 +10,7 @@
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/pink"
         app:layout_constraintBottom_toTopOf="@id/barChart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,9 +18,7 @@
         app:layout_constraintVertical_bias="0.0"
         app:layout_constraintVertical_chainStyle="packed"
         app:title="MP Chart"
-        app:titleTextColor="@color/white"
-        android:background="@color/pink"
-        />
+        app:titleTextColor="@color/white" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/barChart"
@@ -44,9 +43,23 @@
         android:text="LINE CHART"
         android:textColor="@color/white"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/donoutChart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/barChart" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/donoutChart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/orange"
+        android:text="DONOUT CHART"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineChart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
             start<LineChartActivity>()
         }
 
+        binding.donoutChart.setOnClickListener {
+            start<DonoutChartActivity>()
+        }
 
     }
 }
