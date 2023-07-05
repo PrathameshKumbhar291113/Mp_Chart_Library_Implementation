@@ -41,5 +41,6 @@ class DonoutChartActivity : AppCompatActivity() {
 
         binding.pieChart.animateY(1000)
 
+
     }
 }
