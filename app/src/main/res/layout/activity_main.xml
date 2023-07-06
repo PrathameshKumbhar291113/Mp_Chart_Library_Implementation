@@ -11,12 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/pink"
-        app:layout_constraintBottom_toTopOf="@id/barChart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_chainStyle="spread"
         app:title="MP Chart"
         app:titleTextColor="@color/white" />
 
@@ -24,7 +22,6 @@
         android:id="@+id/barChart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
         android:background="@color/purple"
         android:text="BAR CHART"
         android:textColor="@color/white"
@@ -38,7 +35,6 @@
         android:id="@+id/lineChart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:background="@color/dark_blue"
         android:text="LINE CHART"
         android:textColor="@color/white"
@@ -52,14 +48,25 @@
         android:id="@+id/donoutChart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:background="@color/orange"
         android:text="DONOUT CHART"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/pieChart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineChart" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pieChart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="PIE CHART"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lineChart" />
-
+        app:layout_constraintTop_toBottomOf="@id/donoutChart" />
 </androidx.constraintlayout.widget.ConstraintLayout>

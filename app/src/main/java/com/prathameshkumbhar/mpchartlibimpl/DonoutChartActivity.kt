@@ -35,7 +35,7 @@ class DonoutChartActivity : AppCompatActivity() {
 
         binding.pieChart.data = pieData
 
-        binding.pieChart.centerText = "list"
+        binding.pieChart.centerText = "Rs. 1234/-"
 
         binding.pieChart.description.text = "Pie Chart"
 
