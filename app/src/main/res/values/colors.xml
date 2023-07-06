@@ -9,4 +9,7 @@
     <color name="purple">#9C27B0</color>
     <color name="dark_blue">#3F51B5</color>
     <color name="pink">#E91E63</color>
+    <color name="secondary_green">#00A555</color>
+    <color name="light_purple">#C5B5FF</color>
+    <color name="yellow">#F2B509</color>
 </resources>

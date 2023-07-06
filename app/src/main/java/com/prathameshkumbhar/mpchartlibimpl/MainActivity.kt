@@ -29,5 +29,9 @@ class MainActivity : AppCompatActivity() {
             start<DonoutChartActivity>()
         }
 
+        binding.pieChart.setOnClickListener {
+            start<PieChartActivity>()
+        }
+
     }
 }

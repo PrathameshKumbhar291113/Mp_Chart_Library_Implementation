@@ -40,7 +40,7 @@ class BarChartActivity : AppCompatActivity() {
         with(binding.barChartLayout){
             data = barData
             setFitBars(false)
-            animateXY(100000,200000)
+            animateXY(3000,3000)
             xAxis.setDrawGridLines(false)
             axisLeft.setDrawGridLines(false)
             axisRight.setDrawGridLines(false)
